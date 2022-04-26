@@ -76,45 +76,6 @@ body {
 /* Main */
 main {
     grid-area: "main";
-    margin: auto;
-    padding: 1rem;
-    width: 90vw;
-}
-
-.casoExito {
-    border-top: 1px gray solid;
-    border-bottom: 1px gray solid;
-    padding: 16px 8px 16px 8px;
-    margin-bottom: 8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.casoExito_articulo {
-    width: 40%;
-}
-
-.casoExito_articulo h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-.casosRecientes {
-    margin: 60px 0 8rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-}
-
-.casosRecientes h3 {
-    text-align: left;
-    margin: 8px 0 5px 0;
-    font-size: 2em;
-}
-
-.casosRecientes p {
-    color: gray;
 }
 
 .casosAnteriores {
@@ -269,18 +230,6 @@ input:focus {
     }
     #photoBy{
         font-size: 0.5em;
-    }
-
-    .casoExito {
-        padding: 4px 2px 4px 2px;
-        flex-direction: column;
-    }
-    .casoExito img, iframe {
-        width: 100%;
-    }
-    .casoExito_articulo {
-        font-size: 1em;
-        width: 100%;
     }
     .casosRecientes {
         margin: 0;
