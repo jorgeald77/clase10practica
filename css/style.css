@@ -30,7 +30,6 @@ body {
 
 .headerMain {
     height: 72px;
-    padding: 0 30px 0 30px;
     background-color: lightslategrey;
     background-image: linear-gradient(to right, lightslategrey, white);
 }
@@ -40,29 +39,25 @@ body {
 }
 
 .headerMain_nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
 }
 
-.headerMain_nav button {
-    height: 30px;
-    border: none;
+.headerMain_nav li {
+    height: 35px;
     padding: 0 15px 0 25px;
     background-color: darkslategray;
     cursor: pointer;
     transition: height 200ms;
 }
 
-.headerMain_nav button:hover {
+.headerMain_nav li:hover {
     height: 50px;
     transition: height 200ms;
     background-color: gray;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.headerMain_nav button a {
+.headerMain_nav a {
     color: white;
     text-decoration: none;
     white-space: nowrap;
@@ -256,29 +251,20 @@ input:focus {
 /* Media Queries*/
 @media screen and (max-width: 768px) {
     #header {
-        height: 200px;
+        height: 300px;
         background-size: 100% 300px;
         background-position: center center;
     }
-    .headerMain {
-        padding: 0px;
-        flex-direction: column;
-    }
     .headerMain_titulo {
-        padding-left: 1rem;
-        width: min-content;
-        color: white;
         font-size: 2em;
     }
     .headerMain_nav {
-        padding: 0 10px 0 10px;
         background-color: darkslategray;
     }
-    .headerMain_nav button {
+    .headerMain_nav li {
         height: 30px;
-        transition: none;
     }
-    .headerMain_nav button:hover {
+    .headerMain_nav li:hover {
         height: 30px;
     }
     #photoBy{
