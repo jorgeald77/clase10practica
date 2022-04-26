@@ -65,6 +65,7 @@ body {
     border: none;
     padding: 0 15px 0 25px;
     background-color: darkslategray;
+    cursor: pointer;
 }
 
 .headerMain_nav button:hover {
