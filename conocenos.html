@@ -5,42 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emprendiendo | conócenos</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <!-- Header-->
-<header id="header">
-    <div class="headerMain">
-        <div class="headerMain_titulo">
-            <p class="">Emprendiendo</p>
+<header id="header" class="container-fluid position-relative">
+    <div class="headerMain d-flex flex-column justify-content-start flex-md-row justify-content-md-between fixed-top">
+        <div class="headerMain_titulo ps-4">
+            <p class="text-white">Emprendiendo</p>
         </div>
         
         <nav class="headerMain_nav">
-            <ul>
+            <ul class="nav justify-content-center justify-content-ms-end">
                 <li>
-                    <button>
-                        <a href="./index.html">Home</a>
-                    </button>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <button>
-                        <a href="./casos_exito.html">Casos de éxito</a>
-                    </button>
+                    <a href="./casos_exito.html">Casos de éxito</a>
                 </li>
                 <li>
-                    <button>
-                        <a href="./conocenos.html">Conócenos</a>
-                    </button>
+                    <a href="./conocenos.html">Conócenos</a>
                 </li>
                 <li>
-                    <button>
-                        <a href="./newsletter.html">Newsletter</a>
-                    </button>
+                    <a href="./newsletter.html">Newsletter</a>
                 </li>
                 <li>
-                    <button>
-                        <a href="./contacto.html">Contacto</a>
-                    </button>
+                    <a href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -50,7 +42,7 @@
 </header>
 
 <!-- Contenido principal-->
-<main>
+<main class="container my-5">
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, accusamus fugiat assumenda architecto atque vero beatae quis id tempore, voluptatem, debitis sapiente cumque suscipit eos voluptas. Velit aspernatur alias neque!
     Corrupti eos, numquam cumque dolorum fugiat aut rem maxime omnis illo exercitationem aspernatur ipsa alias error, itaque, ducimus maiores? Sint delectus accusantium repudiandae inventore id dolorum, non reiciendis. Optio, praesentium.
     Tenetur commodi ipsam repudiandae iure rerum aut, aspernatur consequuntur eius quis unde quae sapiente animi? Totam alias repudiandae pariatur blanditiis excepturi ut beatae nesciunt. Fugiat atque culpa tenetur perferendis enim!</p>
@@ -58,44 +50,38 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit obcaecati asperiores provident eveniet explicabo, voluptate laborum eligendi praesentium rerum accusantium dolore quos dicta veniam sint nobis, cum esse tempora.
     Laboriosam libero impedit nisi officia nihil odio totam ipsum, sequi sapiente distinctio beatae possimus voluptatem numquam architecto debitis vitae autem! Nihil quaerat nulla repellendus dolores, quam cupiditate harum ea iusto!</p>
 
-    <section class="conocenos_img">
-        <div class="my-2 text-center">
-            <div class="img-rounded">
-                <img src="./img/person_1.jpeg" alt="foto" width="120px">
-            </div>
+    <section class="row my-5">
+        <div class="col-6 col-md-3 text-center">
+            <img class="rounded-circle" src="./img/person_1.jpeg" alt="foto" width="120px">
             <h4>Nombre</h4>
             <p class="fotoUser">Photo by <a href="https://unsplash.com/@danilal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniil Lobachev</a> on <a href="https://unsplash.com/s/photos/face?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
         </div>
 
-        <div class="my-2 text-center">
-            <div class="img-rounded">
-                <img src="./img/person_2.jpeg" alt="foto" width="120px">
-            </div>
+        <div class="col-6 col-md-3 text-center">
+            <img class="rounded-circle" src="./img/person_2.jpeg" alt="foto" width="120px">
             <h4>Nombre</h4>
             <p class="fotoUser">Photo by <a href="https://unsplash.com/@christianbuehner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">christian buehner</a> on <a href="https://unsplash.com/s/photos/face?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
         </div>
 
-        <div class="my-2 text-center">
-            <div class="img-rounded">
+        <div class="col-6 col-md-3 text-center">
+            
                 <img src="./img/person_3.jpeg" alt="foto" width="120px">
-            </div>
+            
             <h4>Nombre</h4>
             <p class="fotoUser">Photo by <a href="https://unsplash.com/@rohitkhadgi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rohit Khadgi</a> on <a href="https://unsplash.com/s/photos/face?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
         </div>
 
-        <div class="my-2 text-center">
-            <div class="img-rounded">
-                <img src="./img/person_4.jpeg" alt="foto" width="120px">
-            </div>
-            <h4>Nombre</h4>
+        <div class="col-6 col-md-3 text-center">
+            <img src="./img/person_4.jpeg" alt="foto" width="120px">
+            <h5>Nombre</h5>
             <p class="fotoUser">Photo by <a href="https://unsplash.com/@qasimsadiq?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Qasim Sadiq</a> on <a href="https://unsplash.com/s/photos/face?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
         </div>
     </section>
 </main>
 
 <!-- Footer-->
-<footer>
+<footer class="container-fluid">
     <div>
         <a href="#"><img src="./img/facebook.png" alt="facebook" width="30px"></a>
         <a href="#"><img src="./img/instagram.png" alt="instragram" width="30px"></a>

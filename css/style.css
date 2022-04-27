@@ -119,15 +119,6 @@ input:focus {
     border-radius: 10px;
 }
 
-.conocenos_img {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
 .contacto {
     display: flex;
     flex-direction: row;
