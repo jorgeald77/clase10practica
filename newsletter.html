@@ -52,22 +52,25 @@
     Qui laudantium suscipit doloremque eaque nihil officiis, earum laboriosam. Fugit sint molestiae nihil, pariatur ut, quas atque natus vitae cumque deserunt temporibus sunt, labore necessitatibus! Earum quibusdam fuga aperiam nostrum?
     Quae ea expedita deleniti, nam enim, amet necessitatibus quam repellendus facere, unde consectetur quidem blanditiis rerum voluptatum. Maiores accusantium, dolorem facilis atque officiis assumenda reiciendis error quas repellat iusto minus.</p>
 
-    <div class="suscribete">
-        <form>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-            </div>
-
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Escribe tu correo electrónico">
-            </div>
-
-            <div>
-                <input type="submit" value="Suscribirme">
-            </div>
-        </form>
+    <div class="row justify-content-center my-5">
+        <div class="col-4">
+            <form>
+                <fieldset>
+                    <legend>Suscríbete</legend>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-lable">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Escribe tu correo electrónico">
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
 </main>
 
