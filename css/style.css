@@ -209,7 +209,6 @@ input:focus {
     .border-8 {
         border: 4px darkslategrey solid;;
     }
-
     .headerMain_titulo {
         font-size: 2em;
     }
@@ -224,11 +223,9 @@ input:focus {
     .headerMain_nav li:hover {
         height: 30px;
     }
-
     #photoBy{
         font-size: 0.5em;
     }
-
     .suscribete {
         width: 80%;
         margin-top: 2rem;
