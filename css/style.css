@@ -4,11 +4,6 @@
 * {
     font-family: 'Poiret One', cursive;
 }
-
-p {
-    font-family: 'Handlee', cursive;
-}
-
 body {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -17,6 +12,10 @@ body {
     "main"
     "footer";
 }
+p {
+    font-family: 'Handlee', cursive;
+}
+
 
 /* Header */
 #header {
@@ -62,7 +61,6 @@ body {
     text-decoration: none;
     white-space: nowrap;
 }
-
 #photoBy{
     position: absolute;
     bottom: 10px;
@@ -73,10 +71,12 @@ body {
     z-index: 5;
 }
 
+
 /* Main */
 main {
     grid-area: "main";
 }
+
 
 /* Footer*/
 footer {
@@ -88,14 +88,6 @@ footer {
     padding: 1rem;
     text-align: right;
 }
-
-
-.contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 
 
 /* Propiedades Varias*/

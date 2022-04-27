@@ -43,29 +43,31 @@
 
 <!-- Contenido principal-->
 <main class="container my-5">
-    <section class="contacto">
-        <div class="w-60">
-            <h2>Contáctanos</h2>
-            <p class="my-2 mx-2 text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente dolore accusamus exercitationem ipsum velit fugiat sequi quae dicta aperiam enim, dolores obcaecati recusandae, rem, consequatur similique labore autem ullam ea.</p>
+    <section class="row">
+        <div class="col-12 col-md-8">
+            <h2 class="fs-1">Contáctanos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente dolore accusamus exercitationem ipsum velit fugiat sequi quae dicta aperiam enim, dolores obcaecati recusandae, rem, consequatur similique labore autem ullam ea.</p>
         </div>
 
-        <form>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder="Escribe tu correo electrónico">
-            </div>
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
+        <div class="col-12 col-md-4 my-5 my-md-0">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-title">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-title">Email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Escribe tu correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-title">Mensaje</label>
+                    <textarea name="mensaje" class="form-control" id="mensaje" cols="30" rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                </div>
+            </form>
+        </div>
     </section>
 </main>
 
