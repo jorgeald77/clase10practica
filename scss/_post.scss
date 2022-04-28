@@ -1,0 +1,13 @@
+.post {
+    background-color: $colorPrimario;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+
+    button {
+        border: 0;
+        padding: 10px 20px;
+        background-color: $colorSecundario;
+        color: white;
+    }
+}

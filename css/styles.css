@@ -5,18 +5,4 @@ h5 {
 h3 {
   color: green;
 }
-
-.post {
-  background-color: orange;
-  border-radius: 5px;
-  padding: 10px;
-  color: white;
-}
-
-.post button {
-  border: 0;
-  padding: 10px 20px;
-  background-color: green;
-  color: white;
-}
 /*# sourceMappingURL=styles.css.map */
