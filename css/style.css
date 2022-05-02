@@ -126,6 +126,9 @@ footer {
     .headerMain_nav li:hover {
         height: 30px;
     }
+    .headerMain_nav a {
+        font-size: 11px;
+    }
     #photoBy{
         font-size: 0.5em;
     }
