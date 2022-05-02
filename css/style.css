@@ -35,6 +35,8 @@ p {
 
 .headerMain_titulo {
     font-size: 4em;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 .headerMain_nav ul {
@@ -57,6 +59,7 @@ p {
 }
 
 .headerMain_nav a {
+    font-size: medium;
     color: white;
     text-decoration: none;
     white-space: nowrap;
@@ -101,6 +104,18 @@ footer {
     border: 1px red solid;
 }
 
+
+/* Animaciones */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
 /* Media Queries*/
 @media screen and (max-width: 768px) {
