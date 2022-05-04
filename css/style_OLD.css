@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap');
+
+
+* {
+    font-family: 'Poiret One', cursive;
+}
+body {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+p {
+    font-family: 'Handlee', cursive;
+}
+
+
+/* Header */
+#header {
+    grid-area: "header";
+    height: 450px;
+    background-image: url(./../img/background.jpeg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.headerMain {
+    height: 72px;
+    background-color: lightslategrey;
+    background-image: linear-gradient(to right, lightslategrey, white);
+}
+
+.headerMain_titulo {
+    font-size: 4em;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.headerMain_nav ul {
+    flex-wrap: nowrap;
+}
+
+.headerMain_nav li {
+    height: 35px;
+    padding: 0 15px 0 25px;
+    background-color: darkslategray;
+    cursor: pointer;
+    transition: height 200ms;
+}
+
+.headerMain_nav li:hover {
+    height: 50px;
+    transition: height 200ms;
+    background-color: gray;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.headerMain_nav a {
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#photoBy{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: lightgray;
+    z-index: 5;
+}
+
+
+/* Main */
+main {
+    grid-area: "main";
+}
+main img:hover {
+    filter: blur(5px);
+}
+
+
+/* Footer*/
+footer {
+    grid-area: "footer";
+    height: 64px;
+    background-color: darkslategray;
+    color: white;
+    position: relative;
+    padding: 1rem;
+    text-align: right;
+}
+
+
+/* Propiedades Varias*/
+.border-8 {
+    border: 6px darkslategrey solid;
+}
+.fotoUser {
+    font-size: 0.5em;
+}
+.b-red {
+    border: 1px red solid;
+}
+
+
+/* Animaciones */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Media Queries*/
+@media screen and (max-width: 768px) {
+    #header {
+        height: 300px;
+        background-size: 100% 300px;
+        background-position: center center;
+    }
+    .border-8 {
+        border: 4px darkslategrey solid;;
+    }
+    .headerMain_titulo {
+        font-size: 2em;
+    }
+    .headerMain_nav {
+        background-color: darkslategray;
+    }
+    .headerMain_nav li {
+        height: 30px;
+        padding: 0 10px 0 15px;
+
+    }
+    .headerMain_nav li:hover {
+        height: 30px;
+    }
+    .headerMain_nav a {
+        font-size: 11px;
+    }
+    #photoBy{
+        font-size: 0.5em;
+    }
+}
