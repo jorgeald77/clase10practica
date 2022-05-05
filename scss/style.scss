@@ -28,8 +28,8 @@ p {
 
 .headerMain {
     height: 72px;
-    background-color: lightslategrey;
-    background-image: linear-gradient(to right, lightslategrey, white);
+    background-color: $color-gray-10;
+    background-image: linear-gradient(to right, $color-gray-10, white);
 }
 
 .headerMain_titulo {
@@ -46,7 +46,7 @@ p {
     li {
         height: 35px;
         padding: 0 15px 0 25px;
-        background-color: darkslategray;
+        background-color: $color-gray-50;
         cursor: pointer;
         transition: height 200ms;
     }
@@ -54,7 +54,7 @@ p {
     li:hover {
         height: 50px;
         transition: height 200ms;
-        background-color: gray;
+        background-color: $color-gray;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
@@ -72,7 +72,7 @@ p {
     right: 10px;
     padding: 3px;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: $color-gray-10;
     z-index: 5;
 }
 
@@ -91,7 +91,7 @@ main {
 footer {
     grid-area: "footer";
     height: 64px;
-    background-color: darkslategray;
+    background-color: $color-gray-50;
     color: white;
     position: relative;
     padding: 1rem;
@@ -100,13 +100,13 @@ footer {
 
 /* Propiedades Varias*/
 .border-8 {
-    border: 6px darkslategrey solid;
+    border: 6px $color-gray-50 solid;
 }
 .fotoUser {
     font-size: 0.5em;
 }
 .b-red {
-    border: 1px red solid;
+    border: 1px $color-red solid;
 }
 
 /* Animaciones */
@@ -129,13 +129,13 @@ footer {
         background-position: center center;
     }
     .border-8 {
-        border: 4px darkslategrey solid;;
+        border: 4px $color-gray-50 solid;;
     }
     .headerMain_titulo {
         font-size: 2em;
     }
     .headerMain_nav {
-        background-color: darkslategray;
+        background-color: $color-gray-50;
 
         li {
             height: 30px;
