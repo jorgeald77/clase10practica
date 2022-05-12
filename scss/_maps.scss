@@ -1,0 +1,11 @@
+$bordes_fotos: (
+    destacada: $color-gray-50,
+    reciente: $color-gray-10,
+    anterior: $color-gray,
+);
+
+@each $foto, $color in $bordes_fotos {
+    .borde-#{$foto} {
+        border: 8px $color solid;
+    }
+}
