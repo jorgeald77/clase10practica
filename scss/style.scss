@@ -1,5 +1,6 @@
-@import "_variables";
-@import "_titulos_textos";
+@import "variables";
+@import "mixins";
+@import "titulos_textos";
 
 
 * {
@@ -89,6 +90,10 @@ main {
     }
 }
 
+.fila {
+    @include flex-row-center;
+}
+
 
 /* Footer*/
 footer {
@@ -143,10 +148,10 @@ footer {
         li {
             height: 30px;
             padding: 0 10px 0 15px;
+
             &:hover {
                 height: 30px;
             }
-    
         }
 
         a {
