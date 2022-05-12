@@ -49,14 +49,15 @@ p {
         background-color: $color-gray-50;
         cursor: pointer;
         transition: height 200ms;
+
+        &:hover {
+            height: 50px;
+            transition: height 200ms;
+            background-color: $color-gray;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
     }
 
-    li:hover {
-        height: 50px;
-        transition: height 200ms;
-        background-color: $color-gray;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    }
 
     a {
         font-size: medium;
@@ -140,11 +141,10 @@ footer {
         li {
             height: 30px;
             padding: 0 10px 0 15px;
+            &:hover {
+                height: 30px;
+            }
     
-        }
-
-        li:hover {
-            height: 30px;
         }
 
         a {
