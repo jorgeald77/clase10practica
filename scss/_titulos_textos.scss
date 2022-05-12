@@ -1,0 +1,36 @@
+.titulo {
+    color: $color-gray-50;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Poiret One', cursive;
+    border-left: 10px $color-gray-50 solid;
+    margin-top: 2px;
+}
+
+.titulo-lg {
+    @extend .titulo;
+    border-left: 15px $color-gray-50 solid;
+    font-size: xx-large;
+}
+
+.titulo-sm {
+    @extend .titulo;
+    border-left: 8px $color-gray-50 solid;
+    font-size: small;
+}
+
+.texto {
+    color: $color-gray;
+    font-size: medium;
+    font-family: 'Handlee', cursive;
+}
+
+.texto-lg {
+    @extend .texto;
+    font-size: xx-large;
+}
+
+.texto-sm {
+    @extend .texto;
+    font-size: small;
+}
