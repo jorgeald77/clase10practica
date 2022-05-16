@@ -1,6 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,300;0,500;1,500&display=swap');
 
-$color-gray: gray;
 $color-gray-10: lightslategrey;
 $color-gray-50: darkslategray;
 $color-red: red;
+
+$color-primary: #223A40;
+$color-secondary: #D9D1C7;
+$color-gray: #869AA6;
+$color-gray-dark: #556773;
+$color-gray-light: #E9F0F2;
+
+// Width Heigth 0.25rem = 4px
+@for $i from 0 through 10 {
+    .w-#{$i}{
+        width: 0.25rem * $i;
+    }
+
+}
+// Heigth 0.25rem = 4px
+@for $i from 0 through 10 {
+    .h-#{$i}{
+        height: 0.25em * $i;
+    }
+}
