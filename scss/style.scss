@@ -1,6 +1,7 @@
 @import "variables";
-//@import "mixins";
-//@import "maps";
+@import "titulos_textos";
+@import "mixins";
+@import "maps";
 
 
 * {
@@ -16,13 +17,6 @@ body {
     "header"
     "main"
     "footer";
-}
-
-h1, h2, h3, h4, h5, h6 {
-    padding: 0 .5em;
-    color: $color-secondary;
-    background-color: $color-gray;
-    font-family: 'Tourney', cursive;
 }
 
 p {
@@ -135,14 +129,37 @@ ul {
 // Main
 main {
     grid-area: "main";
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4em;
+
+    .caso-exito {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        box-shadow: 2px 2px 10px $color-gray-dark;
+
+        div {
+            h2 {
+                padding: 1em 0.5em;
+            }
+        }
+
+        iframe {
+            aspect-ratio: 16/9;
+            background-color: $color-gray-light;
+        }        
+    }
 
     img:hover {
         filter: blur(5px);
     }
+
 }
 
 .fila {
-    //@include flex-row-center;
+    @include flex-row-center;
 }
 
 
@@ -232,6 +249,21 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    main {
+        .caso-exito {
+            flex-direction: row;
+            min-height: 300px;
+
+            div {
+                max-width: 40%;
+            }
+
+            iframe {
+                flex-grow: 2;
             }
         }
     }

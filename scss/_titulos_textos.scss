@@ -1,3 +1,10 @@
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 .5em;
+    color: $color-secondary;
+    background-color: $color-gray;
+    font-family: 'Tourney', cursive;
+}
+
 .titulo {
     color: $color-gray-50;
     font-size: large;
