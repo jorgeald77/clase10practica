@@ -303,22 +303,38 @@ main .casos-recientes {
 
 main .casos-recientes article {
   width: 100%;
+  box-shadow: 1px 1px 5px #556773;
 }
 
 main .casos-recientes article img {
   width: 100%;
   object-fit: cover;
-  height: 16em;
+}
+
+main .casos-anteriores {
+  width: 95%;
+  margin: 0 auto;
+}
+
+main .casos-anteriores article {
+  width: 100%;
+  margin-bottom: 2em;
+  display: flex;
+  gap: 2em;
+  box-shadow: 1px 1px 5px #556773;
+}
+
+main .casos-anteriores article:nth-child(odd) {
+  flex-direction: row-reverse;
+  gap: 0;
+}
+
+main .casos-anteriores article img {
+  width: 180px;
 }
 
 main img:hover {
   filter: blur(5px);
-}
-
-.fila {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 /* Footer*/
@@ -333,10 +349,6 @@ footer {
 }
 
 /* Propiedades Varias*/
-.border-8 {
-  border: 6px darkslategray solid;
-}
-
 .fotoUser {
   font-size: 0.5em;
 }
