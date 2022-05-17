@@ -88,6 +88,41 @@
   height: 2.5em;
 }
 
+form {
+  width: 100%;
+}
+
+form fieldset {
+  border: none;
+}
+
+form fieldset legend {
+  color: #223A40;
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+form div label {
+  color: #869AA6;
+  font-size: 1rem;
+  text-transform: lowercase;
+  padding: 2px;
+}
+
+form div input {
+  width: 100%;
+  padding: 1em 1em;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid #D9D1C7;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 0 .5em;
   color: #D9D1C7;
@@ -372,6 +407,13 @@ main .personal p {
   font-size: 0.5em;
 }
 
+main .newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
 /* Footer*/
 footer {
   grid-area: "footer";
@@ -381,6 +423,7 @@ footer {
   position: relative;
   padding: 1rem;
   text-align: right;
+  margin-top: 4em;
 }
 
 .b-red {

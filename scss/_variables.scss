@@ -24,3 +24,38 @@ $color-gray-light: #E9F0F2;
         height: 0.25em * $i;
     }
 }
+
+form {
+    width: 100%;
+
+    fieldset {
+        border: none;
+
+        legend{    
+            color: $color-primary;
+            font-size: 1.5rem;
+            padding: 1em;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    
+        label {
+            color: $color-gray;
+            font-size: 1rem;
+            text-transform: lowercase;
+            padding: 2px;
+        }
+
+        input {
+            width: 100%;
+            padding: 1em 1em;
+            border-radius: 4px;
+            border: none;
+            border-bottom: 2px solid $color-secondary;
+        }
+    }
+}
