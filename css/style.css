@@ -260,9 +260,22 @@ main {
   width: 90%;
   margin: 0 auto;
   margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+main .seccion-titulo {
+  margin: 1em 0;
+  font-size: xx-large;
+  background: none;
+  color: #223A40;
+  border-bottom: 0.2em #556773 solid;
 }
 
 main .caso-exito {
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,6 +290,25 @@ main .caso-exito div h2 {
 main .caso-exito iframe {
   aspect-ratio: 16/9;
   background-color: #E9F0F2;
+}
+
+main .casos-recientes {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+main .casos-recientes article {
+  width: 100%;
+}
+
+main .casos-recientes article img {
+  width: 100%;
+  object-fit: cover;
+  height: 16em;
 }
 
 main img:hover {
@@ -322,6 +354,12 @@ footer {
   .header-main .wrapper nav {
     width: 30%;
     right: -30%;
+  }
+  main .casos-recientes {
+    flex-direction: row;
+  }
+  main .casos-recientes article {
+    width: 40%;
   }
 }
 
@@ -373,6 +411,9 @@ footer {
   }
   main .caso-exito iframe {
     flex-grow: 2;
+  }
+  main .casos-recientes article {
+    width: 30%;
   }
 }
 
