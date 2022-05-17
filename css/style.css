@@ -123,6 +123,14 @@ form div input {
   border-bottom: 2px solid #D9D1C7;
 }
 
+form div textarea {
+  width: 100%;
+  padding: 1em 1em;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid #D9D1C7;
+}
+
 h1, h2, h3, h4, h5, h6 {
   padding: 0 .5em;
   color: #D9D1C7;
@@ -130,37 +138,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Tourney', cursive;
 }
 
-.titulo, .titulo-lg, .titulo-sm {
-  color: darkslategray;
-  font-size: large;
-  font-weight: bolder;
-  font-family: 'Poiret One', cursive;
-  border-left: 10px darkslategray solid;
-  margin-top: 2px;
-}
-
-.titulo-lg {
-  border-left: 15px darkslategray solid;
+.seccion-titulo {
+  margin: 1em 0;
   font-size: xx-large;
-}
-
-.titulo-sm {
-  border-left: 8px darkslategray solid;
-  font-size: small;
-}
-
-.texto, .texto-lg, .texto-sm {
-  color: #869AA6;
-  font-size: medium;
-  font-family: 'Handlee', cursive;
-}
-
-.texto-lg {
-  font-size: xx-large;
-}
-
-.texto-sm {
-  font-size: small;
+  background: none;
+  color: #223A40;
+  border-bottom: 0.2em #556773 solid;
 }
 
 .borde-destacada {
@@ -304,14 +287,6 @@ main {
   gap: 5em;
 }
 
-main .seccion-titulo {
-  margin: 1em 0;
-  font-size: xx-large;
-  background: none;
-  color: #223A40;
-  border-bottom: 0.2em #556773 solid;
-}
-
 main .caso-exito {
   width: 95%;
   margin: 0 auto;
@@ -407,11 +382,11 @@ main .personal p {
   font-size: 0.5em;
 }
 
-main .newsletter {
+main .newsletter, main .contacto {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 50%;
+  width: 90%;
 }
 
 /* Footer*/
@@ -426,11 +401,6 @@ footer {
   margin-top: 4em;
 }
 
-.b-red {
-  border: 1px red solid;
-}
-
-/* Animaciones */
 /* Media Queries*/
 @media screen and (min-width: 576px) {
   .header-main .wrapper .brand {
@@ -448,6 +418,9 @@ footer {
   }
   main .personal {
     grid-template-columns: 1fr 1fr;
+  }
+  main .newsletter, main .contacto {
+    width: 65%;
   }
 }
 

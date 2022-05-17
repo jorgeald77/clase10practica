@@ -140,14 +140,6 @@ main {
     flex-direction: column;
     gap: 5em;
 
-    .seccion-titulo {
-        margin: 1em 0;
-        font-size: xx-large;
-        background: none;
-        color: $color-primary;
-        border-bottom: .2em $color-gray-dark solid;
-    }
-
     .caso-exito {
         width: 95%;
         margin: 0 auto;
@@ -250,7 +242,11 @@ main {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        width: 50%;
+        width: 90%;
+    }
+
+    .contacto {
+        @extend .newsletter;
     }
 }
 
@@ -266,13 +262,6 @@ footer {
     text-align: right;
     margin-top: 4em;
 }
-
-
-.b-red {
-    border: 1px $color-red solid;
-}
-
-/* Animaciones */
 
 
 /* Media Queries*/
@@ -301,6 +290,10 @@ footer {
 
         .personal {
             grid-template-columns: 1fr 1fr;
+        }
+
+        .newsletter {
+            width: 65%;
         }
     }
 }
