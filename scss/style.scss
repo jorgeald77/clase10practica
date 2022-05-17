@@ -238,15 +238,11 @@ main {
         }
     }
 
-    .newsletter {
+    .newsletter, .contacto {
         display: flex;
         justify-content: center;
         margin: 0 auto;
         width: 90%;
-    }
-
-    .contacto {
-        @extend .newsletter;
     }
 }
 
@@ -255,7 +251,7 @@ main {
 footer {
     grid-area: "footer";
     height: 64px;
-    background-color: $color-gray-50;
+    background-color: $color-gray;
     color: white;
     position: relative;
     padding: 1rem;
@@ -292,7 +288,7 @@ footer {
             grid-template-columns: 1fr 1fr;
         }
 
-        .newsletter {
+        .newsletter, .contacto {
             width: 65%;
         }
     }

@@ -393,7 +393,7 @@ main .newsletter, main .contacto {
 footer {
   grid-area: "footer";
   height: 64px;
-  background-color: darkslategray;
+  background-color: #869AA6;
   color: white;
   position: relative;
   padding: 1rem;
