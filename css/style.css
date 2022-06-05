@@ -185,6 +185,12 @@ ul {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .open-nav {
   transform: translateX(-100%);
 }
@@ -321,8 +327,7 @@ main .casos-recientes article {
 }
 
 main .casos-recientes article img {
-  width: 100%;
-  object-fit: cover;
+  min-width: 100%;
 }
 
 main .casos-anteriores {
@@ -343,7 +348,7 @@ main .casos-anteriores article:nth-child(odd) {
 }
 
 main .casos-anteriores article img {
-  width: 180px;
+  max-width: 180px;
 }
 
 main .caso-principal {
@@ -353,8 +358,6 @@ main .caso-principal {
 
 main .caso-principal img {
   max-width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
 main img:hover {
